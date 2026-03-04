@@ -2,8 +2,7 @@
 <suite name="SeleniumSuite" parallel="false">
     <test name="UI Tests">
         <classes>
-            <class name="com.unvoid.tests.LoginTest"/>
-            <class name="com.unvoid.tests.HomePageTest"/>
+            <class name="com.unvoid.tests.SampleTest"/>
         </classes>
     </test>
 </suite>
