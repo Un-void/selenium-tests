@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SeleniumSuite" parallel="false">
+    <test name="UI Tests">
+        <classes>
+            <class name="com.unvoid.tests.LoginTest"/>
+            <class name="com.unvoid.tests.HomePageTest"/>
+        </classes>
+    </test>
+</suite>
