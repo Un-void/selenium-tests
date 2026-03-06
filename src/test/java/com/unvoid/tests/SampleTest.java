@@ -15,6 +15,9 @@ public class SampleTest {
 
         EdgeOptions options = new EdgeOptions();
         options.addArguments("--headless=new");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--remote-allow-origins=*");
 
         WebDriver driver = new EdgeDriver(options);
 
