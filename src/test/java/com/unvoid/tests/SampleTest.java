@@ -2,25 +2,23 @@ package com.unvoid.tests;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SampleTest {
 
     @Test
     public void openHomePage() {
 
-        System.setProperty("webdriver.edge.driver", "C:\\WebDrivers\\msedgedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
 
-        EdgeOptions options = new EdgeOptions();
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--user-data-dir=C:\\temp\\edge-profile");
 
-        WebDriver driver = new EdgeDriver(options);
+        WebDriver driver = new ChromeDriver(options);
 
         driver.get("http://localhost:5173");
 
