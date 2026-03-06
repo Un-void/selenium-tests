@@ -11,7 +11,7 @@ public class SampleTest {
     @Test
     public void openHomePage() {
 
-        WebDriverManager.edgedriver().setup();
+        System.setProperty("webdriver.edge.driver", "C:\\WebDrivers\\msedgedriver.exe");
 
         EdgeOptions options = new EdgeOptions();
         options.addArguments("--headless=new");
